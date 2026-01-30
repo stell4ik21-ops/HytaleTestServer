@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.hytale.poeleveling'
+version = '0.1.0'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly files('libs/HytaleServer.jar')
+    compileOnly files('libs/MultipleHUD-1.0.3-unpacked')
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
