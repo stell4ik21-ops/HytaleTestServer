@@ -1,0 +1,22 @@
+{
+  "Group": "com.hytale",
+  "Name": "PoeLeveling",
+  "Version": "0.1.0",
+  "Description": "POE-style leveling with XP, levels, and NPC scaling.",
+  "Authors": [
+    {
+      "Name": "OpenAI Codex"
+    }
+  ],
+  "Website": "",
+  "ServerVersion": "*",
+  "Dependencies": {
+    "Hytale:EntityModule": "*"
+  },
+  "OptionalDependencies": {
+    "Buuz135:MultipleHUD": "*"
+  },
+  "DisabledByDefault": false,
+  "Main": "com.hytale.poeleveling.PoeLevelingPlugin",
+  "IncludesAssetPack": true
+}
